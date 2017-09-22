@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Visor Web</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" href="img/flaticon.png" type="image/gif" sizes="16x16">
+		<link rel="stylesheet" href="node_modules/leaflet/dist/leaflet.css">
+		<link rel="stylesheet" href="node_modules/leaflet.fullscreen/Control.FullScreen.css">
+		<link rel="stylesheet" href="css/css.css">
+	</head>
+	<body>
+		<div id="map">
+		</div>
+		<div class="containerSetView">
+			<div class="window widget-search-simple">
+				<input id="txtSearchSimple" value="" placeholder="Buscar enfermedad "/>
+			</div>
+			<div class="button widget-basemap" title="Seleccionar Basemap">
+				<input type="button">
+			</div>
+			<div class="button widget-layer" title="Tabla de contenidos">
+				<input type="button">
+			</div>
+		</div>
+		<div class="containerHome widget-home pulse"  id="widget-home">
+			<input type="button" title="Home - Zoom inicial">
+		</div>
+		<div class="containerFullScreen widget-fullscreen pulse">
+			<input type="button" title="Pantalla completa">
+		</div>
+		<div class="containerInformation widget-information pulse">
+			<input type="button" title="Información">
+		</div>
+		
+		<script src="bundle.js"></script>		
+	</body>
+</html>
